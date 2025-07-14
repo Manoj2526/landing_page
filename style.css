@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  padding: 15px 40px;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: #00f7ff;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  background: url('https://www.transparenttextures.com/patterns/stardust.png');
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#typewriter {
+  font-size: 1.5rem;
+  color: #00f7ff;
+  font-family: monospace;
+  border-right: 2px solid #00f7ff;
+  padding: 10px;
+}
+
+.section {
+  padding: 100px 30px;
+  text-align: center;
+}
+
+.neon {
+  color: #00f7fff5;
+  text-shadow: 
+    0 0 2px #00f7ff, 
+    0 0 5px rgba(0, 247, 255, 0.5), 
+    0 0 10px rgba(0, 247, 255, 0.2);
+}
+
+
+.project-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #333;
+  padding: 20px;
+  border-radius: 12px;
+  width: 250px;
+  box-shadow: 0 0 15px rgba(0, 247, 255, 0.1);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px rgba(0, 247, 255, 0.4);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0c0c0c;
+  color: #777;
+}
